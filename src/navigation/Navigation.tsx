@@ -2,6 +2,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import AppLandingPage from '../screens/pre-login/AppLandingPage';
 import Login from '../screens/pre-login/Login';
+import DashboardTabs from './DashboardBottomTab';
 
 const Stack = createNativeStackNavigator();
 
@@ -14,6 +15,7 @@ export default function Navigation() {
       >
         <Stack.Screen name="AppLandingPage" component={AppLandingPage} />
         <Stack.Screen name="Login" component={Login} />
+        <Stack.Screen name="DashboardTabs" component={DashboardTabs} />
       </Stack.Navigator>
     </NavigationContainer>
   );

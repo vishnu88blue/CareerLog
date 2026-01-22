@@ -1,7 +1,7 @@
 import { View, Text, Pressable, StyleSheet } from 'react-native';
 import React, { useEffect, useState } from 'react';
 import BootSplash from 'react-native-bootsplash';
-import PreLoginCarousel from './PreLoginCarousel';
+import PreLoginCarousel from './carousal/PreLoginCarousel';
 import useCommonDeclaration from '../../hooks/use-common';
 
 const AppLandingPage = () => {
@@ -29,7 +29,7 @@ const AppLandingPage = () => {
 
       {/*FlatList */}
       <View style={{ flex: 1, marginTop: width * 0.35, alignItems: 'center' }}>
-        <PreLoginCarousel pageIndex={pageIndex} />
+        <PreLoginCarousel pageIndex={pageIndex} setPageIndex={setPageIndex} />
       </View>
 
       <View style={AppLandingPageStyles.bottomButtonView}>
